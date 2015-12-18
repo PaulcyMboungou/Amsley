@@ -16,10 +16,12 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/full-slider.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+      <!-- jQuery -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,13 +61,58 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>AMSLEY TECHNOLOGIES</h1>
-            <h3>(Making Your Life Better)</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+    <header id="top" class="carousel slide">
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/bg.jpg');"></div>
+                <div class="carousel-caption"> 
+                    <h1>AMSLEY TECHNOLOGIES</h1>
+                    <h3>(Making Your Life Better)</h3>
+                    <br>
+                    <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/consultant.jpg');"></div>
+                <div class="carousel-caption"> 
+                    <h1>AMSLEY TECHNOLOGIES</h1>
+                    <h3>(Making Your Life Better)</h3>
+                    <br>
+                    <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/resize.jpg');"></div>
+                <div class="carousel-caption"> 
+                    <h1>AMSLEY TECHNOLOGIES</h1>
+                    <h3>(Making Your Life Better)</h3>
+                    <br>
+                    <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/app.jpg');"></div>
+                <div class="carousel-caption"> 
+                    <h1>AMSLEY TECHNOLOGIES</h1>
+                    <h3>(Making Your Life Better)</h3>
+                    <br>
+                    <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+                </div>
+            </div>
         </div>
+
+        <!-- Controls -->
+        <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a> -->
     </header>
 
     <!-- About -->
@@ -290,11 +337,11 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -328,6 +375,11 @@
     });
     </script>
 
+      <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 </body>
 
 </html>
